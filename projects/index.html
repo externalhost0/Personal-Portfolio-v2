@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Is this thing on?">
+    <title>Hayden R - Projects</title>
+    <link rel="icon" href="../public/images/favicon.png">
+    <script src="../scripts/others.js" defer></script>
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/specific.css">
+
+</head>
+
+<body class="page">
+    <div>
+        <div class="header" id="H">
+                <div class="logo_container">
+                    <a class="logo" href="../">
+                        <h1>Hayden R</h1>
+                    </a>
+                    <h4 id="sub">Designer / Artist</h4>
+                </div>
+                <nav>
+                    <ul class="navbar">
+                        <a href="../gallery/"><li class="navbaropt" id="GalleryOption">Gallery</li></a>
+                        <a href="../projects/"><li class="navbaropt" id="ProjectOption">Projects</li></a>
+                    </ul>
+                </nav>
+                <a class="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+            </div>
+            <div class="lowerheader"/>
+        </div>
+        <div class="container">
+            <div class="project-list">
+                
+            </div>
+        </div>
+        <footer class="footer">
+            <p id="currentYear"></p> 
+        </footer>
+        <script>
+            var currentYear = ( new Date().getFullYear() );
+            document.getElementById('currentYear').innerHTML = currentYear + ' Hayden Rivas';
+        </script>
+    </div>
+</body>
+
+
+</html>
