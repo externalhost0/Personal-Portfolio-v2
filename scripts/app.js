@@ -7,20 +7,15 @@ const logoContainer = document.getElementsByClassName('logo_container')[0]
 
 
 window.onload = function(){
-    document.getElementById('AboutVideo').style.opacity = "0"
     document.getElementById('GalleryVideo').style.opacity = "0"
     document.getElementById('ProjectVideo').style.opacity = "0"
     document.body.style.backgroundColor = "#202121";
-    document.getElementById("H").style.backgroundColor = "#ffe100";
+    
+    //document.getElementById("H").style.backgroundColor = "#ffe100";
+    //document.getElementById("Spotlight").style.display = 'none'
 
 };
 
-const text = document.getElementById('circular-text');
-text.innerHTML = text.textContent.replace(/\S/g,"<span>$&</span>");
-const ele = document.querySelectorALL('span');
-for(var i = 1; i<ele.length;i++){
-    ele[1].style.transform="rotate("+i*200+"deg)";
-}
 
 // DELETES ONPAGE LOAD ANIMATION
 
@@ -33,6 +28,7 @@ document.getElementById("M").addEventListener("mouseover", () => {
     welcometext.style.color = '#202121';
     r.style.setProperty('--linecolor', '#202121');
     document.getElementById('undertext').style.color = '#202121';
+    document.getElementById('circular-text').style.filter = 'none';
             
 
 });
@@ -42,6 +38,7 @@ document.getElementById("M").addEventListener("mouseout", () => {
     welcometext.style.color = '#ffffff';
     r.style.setProperty('--linecolor', '#ffe100');
     document.getElementById('undertext').style.color = '#ffffff';
+    document.getElementById('circular-text').style.filter = 'invert(100%) brightness(1000%) contrast(1000%)';
 
 });
 
@@ -71,3 +68,4 @@ toggleButton.addEventListener('click', () => {
     logoContainer.classList.toggle('active')
 
 })
+

@@ -2,6 +2,8 @@
     --linecolor: #ffe100;
 }
 
+
+
 #LOAD {
     position: absolute;
     background-color: #ffe100;
@@ -171,10 +173,9 @@
     background-color: #202121;
 }
 
-
-
-
 .project-list {
     display: grid;
 
 }
+
+

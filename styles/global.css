@@ -104,6 +104,7 @@ body {
     .logo_container.active {
         display: none;
     }
+
 }
 
 .navbar {
@@ -181,15 +182,19 @@ hr.rounded {
     bottom: 0;
     right: 0;
     position:fixed;
-    align-items: flex-end;
     padding: 10px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+    width: 26vw;
+    max-width: 190px;
+    
 }
 
 
 
 #circular-text{
-    color: white;
-    animation: rotate 5s linear infinite;
+    filter: invert(100%) brightness(1000%) contrast(1000%);
+    animation: rotate 10s linear infinite;
 }
 @keyframes rotate{
     from{
@@ -198,9 +203,4 @@ hr.rounded {
     to{
         transform: rotate(360deg);
     }
-}
-
-span {
-    position: fixed;
-    transform-origin: 0 100px;
 }
