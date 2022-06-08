@@ -105,6 +105,7 @@ body {
         display: none;
     }
 
+
 }
 
 .navbar {
@@ -190,6 +191,33 @@ hr.rounded {
     
 }
 
+.foursquares {
+  display:grid;
+  grid-template-columns: auto auto;
+  grid-row: auto auto;
+  grid-column-gap: 2vw;
+  grid-row-gap: 2vw;
+}
+
+.twosquares {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-row: auto auto;
+
+}
+
+.threesquares {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-row: auto auto;
+    
+}
+
+.singles {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
 
 
 #circular-text{
@@ -203,4 +231,11 @@ hr.rounded {
     to{
         transform: rotate(360deg);
     }
+}
+
+hr.invisible {
+    border-top: 0px solid #202121;
+    border-bottom: 0px;
+    border-radius: 0px;
+    margin-bottom: 10px;
 }

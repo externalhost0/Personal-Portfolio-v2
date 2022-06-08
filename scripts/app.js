@@ -29,7 +29,8 @@ document.getElementById("M").addEventListener("mouseover", () => {
     r.style.setProperty('--linecolor', '#202121');
     document.getElementById('undertext').style.color = '#202121';
     document.getElementById('circular-text').style.filter = 'none';
-            
+    document.getElementsByClassName('icons')[0].style.color = '#202121';
+    document.getElementsByClassName('icons')[1].style.color = '#202121';
 
 });
 
@@ -39,7 +40,8 @@ document.getElementById("M").addEventListener("mouseout", () => {
     r.style.setProperty('--linecolor', '#ffe100');
     document.getElementById('undertext').style.color = '#ffffff';
     document.getElementById('circular-text').style.filter = 'invert(100%) brightness(1000%) contrast(1000%)';
-
+    document.getElementsByClassName('icons')[0].style.color = 'white';
+    document.getElementsByClassName('icons')[1].style.color = 'white';
 });
 
 // VIDEO FUNCTIONS

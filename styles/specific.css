@@ -2,7 +2,10 @@
     --linecolor: #ffe100;
 }
 
-
+*{
+    padding: 0;
+    margin: 0;
+}
 
 #LOAD {
     position: absolute;
@@ -34,16 +37,29 @@
 
 }
 
+
+
 #C.container {
-    margin: 8vh;
+    /* margin: 8vw;
+    margin-left: 15%;
+    margin-right: 15%; */
+    margin: auto auto;
+    padding: 6%;
+    max-width: 950px;
+
 
 }
 
 #C.container h2 {
     color: white;
     padding: 10px;
-    font-size: 2.2vw;
+    font-size: 2vmax;
     font-weight: 500;
+}
+@media (min-width:1100px) {
+    #C.container h2{
+        font-size: 30px;
+    }
 }
 
 .toptext {
@@ -105,7 +121,16 @@
       typing 3s steps(1, end) 1.2s,
       blink-caret 1.3s step-end infinite;
   }
-  
+  @media (max-width: 660px){
+      .typewriter h1{
+        font-size: 4rem;
+      }
+      #undertext {
+          font-size: 1rem;
+      }
+      
+  }
+
   /* The typing effect */
   @keyframes typing {
     0% {
@@ -146,22 +171,27 @@
     padding-bottom: 20px;
     color: white;
     font-weight: 300;
+    overflow: hidden;
 }
 
 
 
 .galleryALL {
-    display: grid;
+    display:grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     height:auto;
     overflow:auto;
+    align-items: center;
+    justify-items: center;
+    
 }
 
 
 .gallery-item img {
+    align-self: center;
     padding: 10px;
     float:right;
-    width:100%;
+    width: 100%;
     transition: 0.2s ease-out;
 }
 
@@ -174,8 +204,124 @@
 }
 
 .project-list {
-    display: grid;
-
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+    flex-direction: row;
+    overflow: hidden;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin: auto;
+    /*grid-template-columns: repeat(2, 1fr);
+     margin-left: auto;
+    margin-right: auto;
+    justify-content: center; */
+}
+ @media (max-width:660px) {
+    .project-list {
+        flex-direction: column;
+    }
+    .project-item {
+        margin: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: small;
+    }
+    .project-item img{
+        width: 90vw;
+    }
 }
 
+.col1 {
+    width: auto;
+}
+.col2 {
+    width: auto;
+}
 
+.project-item {
+    padding: 25px;
+    margin-bottom: 40px;
+    text-align: center;
+    color: white;
+    font-size: medium;
+}
+.project-item p{
+    font-weight: 300;
+}
+
+.project-item img {
+    width: 400px;
+    border: 5px solid #ffe100;
+}
+
+.bottomleft{
+    margin-top: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 90%;
+    height: 100%;
+    max-width: 480px;
+    margin-left: 5vw;
+    align-items: flex-start;
+}
+@media (max-width: 660px) {
+    .bottomleft {
+        margin-top: 80px;
+        margin-left: 25px;
+    }
+    
+}
+
+.icons {
+    color: white;
+    font-size: 1.7rem;
+    padding-left: 10px;
+    
+}
+@media (max-width:660px) {
+    .icons {
+        font-size: 1.6rem;
+    }
+}
+
+.icoPara {
+    padding-top: 10px;
+    display: inline;
+    float: left;
+    width: 10%;
+    align-self: center;
+    text-decoration: none;
+}
+
+.textPara {
+    padding-left: 35px;
+    padding-top: 15px;
+    display: inline;
+    float: left;
+    width: 20%;
+    align-self: center;
+    text-decoration: none;
+}
+
+.textPara::before {
+content: '';
+position: absolute;
+margin-top: 26px;
+width: 8rem;
+height: 3px;
+border-radius: 4px;
+background-color: #ffe100;
+
+transform-origin: right;
+transform: scaleX(0);
+transition: transform .3s ease-in-out;
+}
+
+.textPara:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
