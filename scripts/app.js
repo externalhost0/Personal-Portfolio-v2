@@ -9,7 +9,7 @@ const logoContainer = document.getElementsByClassName('logo_container')[0]
 window.onload = function(){
     document.getElementById('GalleryVideo').style.opacity = "0"
     document.getElementById('ProjectVideo').style.opacity = "0"
-    document.body.style.backgroundColor = "#202121";
+    
     
     //document.getElementById("H").style.backgroundColor = "#ffe100";
     //document.getElementById("Spotlight").style.display = 'none'
