@@ -243,6 +243,8 @@
 .circular-text{
     filter: invert(100%) brightness(1000%) contrast(1000%);
     animation: rotate 10s linear infinite;
+    overflow: hidden;
+
 }
 @keyframes rotate{
     from{
@@ -325,6 +327,7 @@
     flex-direction: column;
     justify-content: left;
     height: 100%;
+    float: left;
     max-width: 480px;
     margin-left: 5vw;
     align-items: flex-start;
