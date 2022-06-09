@@ -5,12 +5,17 @@ var r = document.querySelector(':root');
 const headerbox = document.getElementsByClassName('header')[0]
 const logoContainer = document.getElementsByClassName('logo_container')[0]
 
-
-window.onload = function(){
-    document.getElementById('GalleryVideo').style.opacity = "0"
-    document.getElementById('ProjectVideo').style.opacity = "0"
-    
-};
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    document.getElementById('GalleryVideo').remove();
+    document.getElementById('ProjectVideo').remove();
+   }
+else {
+    window.onload = function(){
+        document.getElementById('GalleryVideo').style.opacity = "0"
+        document.getElementById('ProjectVideo').style.opacity = "0"
+        
+    };
+}
 
 
 // DELETES ONPAGE LOAD ANIMATION
