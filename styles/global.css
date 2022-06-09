@@ -184,7 +184,6 @@ hr.rounded {
     border-top: 4px solid #bbb;
     border-bottom: 0px;
     border-radius: 3px;
-    margin-bottom: 10px;
   }
 
 #bottomright {
@@ -208,8 +207,8 @@ hr.rounded {
   display:grid;
   grid-template-columns: auto auto;
   grid-row: auto auto;
-  grid-column-gap: 2vw;
-  grid-row-gap: 2vw;
+  grid-column-gap: 1.5vw;
+  grid-row-gap: 1.5vw;
 }
 
 .twosquares {
@@ -229,7 +228,17 @@ hr.rounded {
 .singles {
     display: flex;
     flex-direction: column;
-    padding: 25px;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+@media (max-width: 660px) {
+    .singles {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .gallery-item img {
+        padding: -15px;
+    }
 }
 
 
