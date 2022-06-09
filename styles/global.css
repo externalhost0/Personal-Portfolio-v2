@@ -231,18 +231,6 @@ hr.rounded {
 }
 
 
-#circular-text{
-    filter: invert(100%) brightness(1000%) contrast(1000%);
-    animation: rotate 10s linear infinite;
-}
-@keyframes rotate{
-    from{
-        transform: rotate(0deg);
-    }
-    to{
-        transform: rotate(360deg);
-    }
-}
 
 hr.invisible {
     border-top: 0px solid #202121;
