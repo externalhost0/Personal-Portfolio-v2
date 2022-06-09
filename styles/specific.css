@@ -108,6 +108,8 @@
     transition: ease-in 0.2s;
 }
 
+
+
 .typewriter h1 {
     color: white;
     display: inline-block;
@@ -127,6 +129,11 @@
       }
       #undertext {
           font-size: 1rem;
+      }
+      .typewriter h1 {
+          animation: 
+            typingMobile 3s steps(1, end) 1.2s,
+            blink-caret 1.3s step-end infinite;
       }
       
   }
@@ -165,6 +172,36 @@
   @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: var(--linecolor); }
+  }
+
+  @keyframes typingMobile {
+    0% {
+        width: 0px;
+    }
+    12.5% {
+        width: 70px;
+    }
+    25% {
+        width: 110px;
+    }
+    37.5% {
+        width: 130px;
+    }
+    50% {
+        width: 160px;
+    }
+    62.5%{
+        width: 205px;
+    }
+    75%{
+        width: 265px;
+    }
+    87.2%{
+        width: 300px;
+    }
+    100%{
+        width: 410px;
+    }
   }
 
 #undertext {
@@ -272,6 +309,15 @@
 .project-item img {
     width: 400px;
     border: 5px solid #ffe100;
+}
+@media (max-width: 660px) {
+    .project-item img {
+        width: 300px;
+    }
+    .project-item {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
 }
 
 .bottomleft{

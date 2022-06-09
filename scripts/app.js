@@ -10,10 +10,6 @@ window.onload = function(){
     document.getElementById('GalleryVideo').style.opacity = "0"
     document.getElementById('ProjectVideo').style.opacity = "0"
     
-    
-    //document.getElementById("H").style.backgroundColor = "#ffe100";
-    //document.getElementById("Spotlight").style.display = 'none'
-
 };
 
 
