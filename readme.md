@@ -1,6 +1,6 @@
 # Personal Portfolio
 
-![](https://img.shields.io/badge/Made%20with-HTML/CSS/JS-yellow.svg?style=flat-square) ![](https://img.shields.io/github/repo-size/ExternalHost0/Personal-Portfolio-v2?color=yellow&style=flat-square)
+![](https://img.shields.io/badge/Made%20with-HTML/CSS/JS-yellow.svg?style=flat-square) ![](https://img.shields.io/github/repo-size/ExternalHost0/Personal-Portfolio-v2?color=yellow&style=flat-square) ![](https://img.shields.io/github/last-commit/ExternalHost0/Personal-Portfolio-v2?color=yellow&style=flat-square)
 
 
 ## Welcome to the readme file!
