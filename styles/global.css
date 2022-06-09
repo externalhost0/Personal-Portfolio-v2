@@ -106,7 +106,6 @@ body {
         display: none;
     }
 
-
 }
 
 .navbar {
@@ -139,8 +138,6 @@ body {
     color: white;
 }
 
-
-
 .lowerheader {
     background: linear-gradient(-45deg, #e6ee52, #e7ab3c, #d52323, #1b90c7);
     /*background: linear-gradient(-45deg, #ffbc12, #ff0048, #3eb9bb, #4f07ad);*/
@@ -163,12 +160,11 @@ body {
 .footer {
     bottom: 0;
     height: 20px;
-    width: 90%;
+    width: 100%;
     color: rgb(133, 133, 133);
     position:relative;
     text-align: center;
-    margin-left: 10px;
-    margin-right: 10px;
+
 }
 @media (max-width: 660px) {
     .footer {
