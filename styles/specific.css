@@ -320,11 +320,10 @@
 }
 
 .bottomleft{
-    margin-top: 110px;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: left;
-
     height: 100%;
     max-width: 480px;
     margin-left: 5vw;
