@@ -9,11 +9,3 @@ toggleButton.addEventListener('click', () => {
     logoContainer.classList.toggle('active')
 })
 
-
-class gImage extends HTMLElement {
-    connectedCallback() {
-        var gimg = this.attributes.gimg.value
-        this.innerHTML = `Hello ${gimg}`
-        //this.style.backgroundColor = img
-    }
-}
