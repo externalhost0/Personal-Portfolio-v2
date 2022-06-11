@@ -132,11 +132,13 @@ body {
     transition: color .3s ease-in-out, box-shadow .2s ease-in-out;
 }
 
-
-.navbaropt:hover {
-    box-shadow: inset 110px 0 0 0 #202121;
-    color: white;
+@media (min-width: 660px) {
+    .navbaropt:hover {
+        box-shadow: inset 110px 0 0 0 #202121;
+        color: white;
+    }
 }
+
 
 .lowerheader {
     background: linear-gradient(-45deg, #e6ee52, #e7ab3c, #d52323, #1b90c7);
