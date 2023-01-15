@@ -327,10 +327,10 @@
 }
 
 .col1 {
-    width: auto;
+    width: 500px;
 }
 .col2 {
-    width: auto;
+    width: 500px;
 }
 
 .project-item {
@@ -342,7 +342,6 @@
 }
 .project-item p{
     font-weight: 300;
-    width: 550px;
 }
 
 .project-item img {
